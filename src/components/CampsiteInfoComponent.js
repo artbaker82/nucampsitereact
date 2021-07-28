@@ -6,10 +6,11 @@ function RenderCampsite({ campsite }) {
     <div className="col-md-5 m-1">
       <Card>
         <CardImg width="100%" src={campsite.image} alt={campsite.name} />
-        <CardImgOverlay>
+
+        <CardBody>
           <CardTitle>{campsite.name}</CardTitle>
-        </CardImgOverlay>
-        <CardBody>{campsite.description}</CardBody>
+          {campsite.description}
+        </CardBody>
       </Card>
     </div>
   );
